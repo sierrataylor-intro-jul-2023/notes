@@ -18,6 +18,18 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "c528c19485f419ba",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Questions.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ]
       }
@@ -167,9 +179,13 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "b1f9dbdac4cbdc9d",
+  "active": "1f253b8f8e446eb9",
   "lastOpenFiles": [
+    "DaisyUI.md",
+    "Questions.md",
     "2023-07-17.md",
+    "Tailwind.md",
+    "==Tailwind==.md",
     "2023-07-16.md"
   ]
 }

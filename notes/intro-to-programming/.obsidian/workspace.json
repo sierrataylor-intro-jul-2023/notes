@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2023-07-19.md",
+                "file": "2023-07-20.md",
                 "mode": "source",
                 "source": false
               }
@@ -116,7 +116,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2023-07-19.md"
+                "file": "2023-07-20.md"
               }
             }
           }
@@ -133,7 +133,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2023-07-19.md",
+                "file": "2023-07-20.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -156,7 +156,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2023-07-19.md",
+                "file": "2023-07-20.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -182,6 +182,7 @@
   "active": "1f253b8f8e446eb9",
   "lastOpenFiles": [
     "dotnet.md",
+    "2023-07-20.md",
     "2023-07-19.md",
     "Questions.md",
     "2023-07-18.md",

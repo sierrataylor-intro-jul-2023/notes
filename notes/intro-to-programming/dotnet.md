@@ -41,3 +41,8 @@
         }
 ```
 
+- in .NET we create "types"
+	- there are only 2 "kinds" of types in .NET- 
+		- references: live on the heap, created with classes and records 
+		- values: live on a stack; includes numbers (int, single, double, float, etc.), DateTime, Struct
+- when reference a file in another project in the same solution, you need to add a reference to the second project in project dependencies- Add `using <project_name>;` >> Go into Dependence of the project you're currently in >> Add project reference >> Select project

@@ -2,9 +2,11 @@
 {
     public class BankAccount
     {
-        decimal _balance = 5000;
-        public void Deposit(decimal amountToDeposit)
+        private decimal _balance = 5000;
+        public virtual void Deposit(decimal amountToDeposit)
         {
+            
+            GuardCorrectTransactionAmount(amountToDeposit);
             _balance += amountToDeposit;
         }
 

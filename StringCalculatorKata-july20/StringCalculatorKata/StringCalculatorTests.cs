@@ -52,16 +52,25 @@ namespace StringCalculatorKata
             Assert.Equal(expected, result);
         }
 
-        [Theory(Skip = "Not ready yet")]
-        [InlineData("1\n2", 3)]
-        [InlineData("3,3", 6)]
-        [InlineData("10,2", 12)]
-        [InlineData("8,2", 10)]
-        [InlineData("15\n20", 35)]
+        [Theory]
+        [InlineData("1\n2\n3", 6)]
+        [InlineData("1,2\n3", 6)]
         public void NewLineSeparators(string numbers, int expected)
         {
             var calculator = new StringCalculator();
             var result = calculator.Add(numbers);
+
+            Assert.Equal(expected, result);
+        }
+
+        [Theory]
+        [InlineData("//X;\n1X2X3", 6)]
+
+        public void CustomDelimeters(string numbers, int expected)
+        {
+            var calculator = new StringCalculator();
+            var result = calculator.Add(numbers);
+
             Assert.Equal(expected, result);
         }
     }

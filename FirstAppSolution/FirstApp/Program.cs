@@ -1,4 +1,6 @@
 ﻿using FirstApp.Models;
+using FirstApp.Services;
+using Microsoft.AspNetCore.Mvc;
 using System;
 
 namespace FirstApp
@@ -13,6 +15,8 @@ namespace FirstApp
             //Console.WriteLine($"Hello {name}");
             Console.WriteLine("Starting up the api");
             var builder = WebApplication.CreateBuilder(args);
+            builder.Services.AddTransient<IProvideTheSystemStatus, RemoteStatusSservice>();
+            builder.Services.AddTransient<ISystemTime, SystemTime>();
 
             //confugration for the API will go here
             Console.WriteLine("About the start the api");
@@ -20,9 +24,10 @@ namespace FirstApp
             //GET /sayhi
             app.MapGet("/sayhi", () => Results.Ok("Yep! Hello, Good To See You"));
             //GET /status
-            app.MapGet("/status", () =>
+            app.MapGet("/status", ([FromServices] IProvideTheSystemStatus _statusGenerator) =>
             {
-                var response = new StatusResponseModel(DateTime.Now, "Looks good", "Operating normally");
+                //var response = new StatusResponseModel(DateTime.Now, "Looks good", "Operating normally");
+                StatusResponseModel response = _statusGenerator.GetCurrentStatus();
                 return Results.Ok(response);
             });
             //GET /todo-list

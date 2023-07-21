@@ -14,7 +14,7 @@ namespace Banking.UnitTests.BankAccounts
         {
 
             //given
-            var account = new BankAccount();
+            var account = new BankAccount(new Mock<ICanCalculateBonusesForBankAccountDeposits>().Object);
             var openingBalance = account.GetBalance();
             var amountToWithdraw = 1.01M;
 
@@ -28,7 +28,7 @@ namespace Banking.UnitTests.BankAccounts
         [Fact]
         public void CanTakeEntireBalance()
         {
-            var account = new BankAccount();
+            var account = new BankAccount(new Mock<ICanCalculateBonusesForBankAccountDeposits>().Object);
             account.Withdraw(account.GetBalance());
             Assert.Equal(0, account.GetBalance());
         }
@@ -38,7 +38,7 @@ namespace Banking.UnitTests.BankAccounts
         [InlineData(0)]
         public void InvalidAmountsNotAllowed(decimal amount)
         {
-            var account = new BankAccount();
+            var account = new BankAccount(new Mock<ICanCalculateBonusesForBankAccountDeposits>().Object);
             var openingBalance = account.GetBalance();
             Assert.Throws<InvalidBankAccountTransactionAmountException>(() =>
             {

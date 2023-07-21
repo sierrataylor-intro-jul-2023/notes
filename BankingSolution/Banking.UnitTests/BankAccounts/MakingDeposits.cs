@@ -1,5 +1,4 @@
-﻿using Banking.Domain;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,7 +13,7 @@ namespace Banking.UnitTests.BankAccounts
         {
 
             //given - arrange
-            var account = new BankAccount();
+            var account = new BankAccount(new Mock<ICanCalculateBonusesForBankAccountDeposits>().Object);
             var openingBalance = account.GetBalance();
             var amountToDeposit = 100.23M;
             //when - act
@@ -27,13 +26,21 @@ namespace Banking.UnitTests.BankAccounts
         [Fact(Skip = "Just a dmeo")]
         public void Demo()
         {
-            var annAccount = new BankAccount();
-            var bobAccount = new BankAccount();
+            var annAccount = new BankAccount(new Mock<ICanCalculateBonusesForBankAccountDeposits>().Object);
+            var bobAccount = new BankAccount(new Mock<ICanCalculateBonusesForBankAccountDeposits>().Object);
 
             annAccount.Deposit(100);
 
             Assert.Equal(5100, annAccount.GetBalance());
             Assert.Equal(5000, bobAccount.GetBalance());
+        }
+    }
+
+    public class DummyBonusCalculator : ICanCalculateBonusesForBankAccountDeposits
+    {
+        public decimal CalculateBonusForDeposit(decimal balance, decimal amountToDeposit)
+        {
+            return 0;
         }
     }
 }

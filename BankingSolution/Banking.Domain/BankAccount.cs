@@ -2,12 +2,20 @@
 {
     public class BankAccount
     {
+        private readonly ICanCalculateBonusesForBankAccountDeposits _bonusCalculator;
         private decimal _balance = 5000;
+
+        public BankAccount(ICanCalculateBonusesForBankAccountDeposits bonusCalculator)
+        {
+            _bonusCalculator = bonusCalculator;
+        }
         public virtual void Deposit(decimal amountToDeposit)
         {
             
+            
             GuardCorrectTransactionAmount(amountToDeposit);
-            _balance += amountToDeposit;
+            var bonus = _bonusCalculator.CalculateBonusForDeposit(_balance, amountToDeposit);
+            _balance += amountToDeposit + bonus;
         }
 
         public decimal GetBalance()

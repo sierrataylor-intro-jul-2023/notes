@@ -46,3 +46,45 @@
 		- references: live on the heap, created with classes and records 
 		- values: live on a stack; includes numbers (int, single, double, float, etc.), DateTime, Struct
 - when reference a file in another project in the same solution, you need to add a reference to the second project in project dependencies- Add `using <project_name>;` >> Go into Dependence of the project you're currently in >> Add project reference >> Select project
+- when writing test that require certain objects/classes you can create a dummy class or ==mock class== 
+```csharp
+    public class DummyBonusCalculator : ICanCalculateBonusesForBankAccountDeposits
+    {
+        public decimal CalculateBonusForDeposit(decimal balance, decimal amountToDeposit)
+        {
+            return 0;
+        }
+    
+```
+- can also use a package to creates Mocks
+
+- when creating a mock class, it creates an instance of an object in memory and methods will return a default value
+- however, because the mock class returns a default value, you must specify what value you want returned in some cases (which is called ==stubbing==)
+```csharp
+// EXAMPLE
+    public class DepositUseTheBonusCalculator
+    {
+        [Fact]
+        public void BonusCalculatorIsUsedAndBonusAppliedToBalance()
+        {
+            // given
+            var stubbedBonusCalculator = new Mock<ICanCalculateBonusesForBankAccountDeposits>();
+            var account = new BankAccount(stubbedBonusCalculator.Object);
+
+            var openingBalance = account.GetBalance();
+            var amountToDeposit = 112.23M;
+            var amountOfBonusToReturn = 69.23M;
+
+            stubbedBonusCalculator.Setup(x => x.CalculateBonusForDeposit(openingBalance, amountToDeposit)).Returns(amountOfBonusToReturn);
+
+            //when
+            account.Deposit(amountToDeposit);
+
+            //then
+            Assert.Equal(openingBalance + amountOfBonusToReturn + amountToDeposit, account.GetBalance());
+
+        }
+    }
+
+```
+- 

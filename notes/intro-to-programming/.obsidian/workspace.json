@@ -13,7 +13,31 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2023-07-21.md",
+                "file": "containers.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "251760e7f3d75c64",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2023-07-24.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1b292919d7809b7f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "databases.md",
                 "mode": "source",
                 "source": false
               }
@@ -31,7 +55,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -116,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2023-07-21.md"
+                "file": "2023-07-24.md"
               }
             }
           }
@@ -133,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2023-07-21.md",
+                "file": "2023-07-24.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -156,7 +181,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2023-07-21.md",
+                "file": "2023-07-24.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -179,18 +204,22 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "1f253b8f8e446eb9",
+  "active": "251760e7f3d75c64",
   "lastOpenFiles": [
+    "containers.md",
+    "databases.md",
+    "2023-07-24.md",
+    "Untitled.md",
+    "dotnet.md",
+    "2023-07-21.md",
     "Angular.md",
     "2023-07-20.md",
     "2023-07-19.md",
-    "2023-07-21.md",
     "DaisyUI.md",
     "Questions.md",
     "Tailwind.md",
     "2023-07-17.md",
     "2023-07-18.md",
-    "dotnet.md",
     "==Tailwind==.md",
     "2023-07-16.md"
   ]

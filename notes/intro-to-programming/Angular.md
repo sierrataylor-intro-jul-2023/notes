@@ -24,3 +24,6 @@ Cypress- common testing for Angular
 - they take some data (state) and make it "pretty"
 - accurately project the state to the user
 - offers affordances the user to interact with the application (via forms, buttons, etc.)
+- to create a enw environment in an Angular app- `ng generate environments`: this will create a new folder called environments
+	- ==NEVER import the development file==
+	- 

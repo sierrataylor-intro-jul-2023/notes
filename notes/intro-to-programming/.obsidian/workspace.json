@@ -13,19 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "containers.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1b62ae498913a68d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2023-07-25.md",
+                "file": "2023-07-17.md",
                 "mode": "source",
                 "source": false
               }
@@ -67,8 +55,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -153,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Angular.md"
+                "file": "2023-07-17.md"
               }
             }
           }
@@ -170,7 +157,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Angular.md",
+                "file": "2023-07-17.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -193,7 +180,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Angular.md",
+                "file": "2023-07-17.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -216,23 +203,24 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "251760e7f3d75c64",
+  "active": "1f253b8f8e446eb9",
   "lastOpenFiles": [
-    "2023-07-25.md",
-    "containers.md",
+    "2023-07-18.md",
+    "2023-07-19.md",
     "Angular.md",
+    "2023-07-26.md",
+    "containers.md",
     "dotnet.md",
+    "2023-07-25.md",
     "2023-07-24.md",
     "databases.md",
     "Untitled.md",
     "2023-07-21.md",
     "2023-07-20.md",
-    "2023-07-19.md",
     "DaisyUI.md",
     "Questions.md",
     "Tailwind.md",
     "2023-07-17.md",
-    "2023-07-18.md",
     "==Tailwind==.md",
     "2023-07-16.md"
   ]

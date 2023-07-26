@@ -4,6 +4,10 @@ cluster- a group of computers you treat as one
 	- clusters are driven by applications which access the cluster through authentication and authorization
 		- example: sending a GET request from our todo application will send the GET to the cluster
 		- clusters drive databases
+- distributed application- multiple services distributed throughout the cluster
+- service-oriented architecture
+	- API gateway catalog
+	- heavily reliant on RPCs
 **containers solve 2 big problems** 
 - dev/prod parity- running the software on 2 very different machines (e.g. "I don't know what's wrong, it works on my machine")
 - sharing a server- traffic, avoid using up resources

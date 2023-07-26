@@ -142,3 +142,7 @@ making a model
     public enum TodoItemStatus { Later, Now, Waiting, Completed}
     public record TodoListItemResponseModel(Guid Id, string Description, TodoItemStatus Status);
 ```
+
+#### object mapping
+- Dapper- a .NET object mapper
+- EntityFramework- made by Microsoft; making

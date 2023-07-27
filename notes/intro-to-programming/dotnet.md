@@ -143,6 +143,11 @@ making a model
     public record TodoListItemResponseModel(Guid Id, string Description, TodoItemStatus Status);
 ```
 
+- can use a variety of NuGet packages to connect to postgresql database
+- can use the package manager console to update the database
+- also need to use mapping to add or get data when interacting with the database
+	- running `add-migration "Initial"` initializes the database; doing this creates a `migrations` folder containing timestamps of every migration made to the database
+
 #### object mapping
 - Dapper- a .NET object mapper
 - EntityFramework- made by Microsoft; making

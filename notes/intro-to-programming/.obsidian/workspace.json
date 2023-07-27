@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2023-07-17.md",
+                "file": "2023-07-27.md",
                 "mode": "source",
                 "source": false
               }
@@ -140,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2023-07-17.md"
+                "file": "2023-07-27.md"
               }
             }
           }
@@ -157,7 +157,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2023-07-17.md",
+                "file": "2023-07-27.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -180,7 +180,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2023-07-17.md",
+                "file": "2023-07-27.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -205,22 +205,23 @@
   },
   "active": "1f253b8f8e446eb9",
   "lastOpenFiles": [
-    "2023-07-18.md",
-    "2023-07-19.md",
-    "Angular.md",
-    "2023-07-26.md",
-    "containers.md",
     "dotnet.md",
+    "2023-07-27.md",
+    "2023-07-17.md",
+    "2023-07-18.md",
+    "2023-07-26.md",
     "2023-07-25.md",
     "2023-07-24.md",
-    "databases.md",
-    "Untitled.md",
     "2023-07-21.md",
     "2023-07-20.md",
+    "2023-07-19.md",
+    "Angular.md",
+    "containers.md",
+    "databases.md",
+    "Untitled.md",
     "DaisyUI.md",
     "Questions.md",
     "Tailwind.md",
-    "2023-07-17.md",
     "==Tailwind==.md",
     "2023-07-16.md"
   ]

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2023-07-27.md",
+                "file": "2023-07-28.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Angular.md",
+                "file": "containers.md",
                 "mode": "source",
                 "source": false
               }
@@ -42,20 +42,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "c528c19485f419ba",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "dotnet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -140,7 +129,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2023-07-27.md"
+                "file": "containers.md"
               }
             }
           }
@@ -157,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2023-07-27.md",
+                "file": "containers.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -180,7 +169,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2023-07-27.md",
+                "file": "containers.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -203,20 +192,21 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "1f253b8f8e446eb9",
+  "active": "251760e7f3d75c64",
   "lastOpenFiles": [
-    "dotnet.md",
+    "Angular.md",
+    "2023-07-28.md",
+    "containers.md",
+    "2023-07-24.md",
     "2023-07-27.md",
+    "dotnet.md",
     "2023-07-17.md",
     "2023-07-18.md",
     "2023-07-26.md",
     "2023-07-25.md",
-    "2023-07-24.md",
     "2023-07-21.md",
     "2023-07-20.md",
     "2023-07-19.md",
-    "Angular.md",
-    "containers.md",
     "databases.md",
     "Untitled.md",
     "DaisyUI.md",

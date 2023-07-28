@@ -1,6 +1,6 @@
 Kernel- the "inner ring" part of Linux that that has access to the processor, memory, hardware,
 	- Microsoft ships a Linux Kernel on the Windows subsystem for Linux; this enables the Windows system to run Linux
-cluster- a group of computers you treat as one
+==cluster==- a group of computers (*nodes*) you treat as one
 	- clusters are driven by applications which access the cluster through authentication and authorization
 		- example: sending a GET request from our todo application will send the GET to the cluster
 		- clusters drive databases
@@ -13,8 +13,18 @@ cluster- a group of computers you treat as one
 - sharing a server- traffic, avoid using up resources
 	- resources: CPU, memory, Storage (disk)
 	- "singleton" issues- disk paths (c:\temp), networking (TCP ports)
-Docker
+- ==the goal with using container is to always send the very least amount of stuff to production as possible== 
+### Docker
+- Docker is a company name
+- a ==container== is a running container image; has one more layer than the container image it comes from
+- a ==container image== is the layers on the hard drive that, when ran, become a container
+- you need a `Dockerfile`
+```Dockerfile
+FROM ubuntu:20.04
+
+```
 - when using docker, you must create a `docker-compose.yml` file to establish the standard for a multi-container application
+- examples:
 ```YAML
 services:
 
@@ -45,4 +55,7 @@ volumes:
   db_data:
 ```
 
+-
+
+### Kubernetes 
 - 
